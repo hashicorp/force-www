@@ -1,0 +1,14 @@
+---
+applications:
+  .:
+    name: hashicorp-force-www
+    framework:
+      name: rack
+      info:
+        mem: 128M
+        description: Rack Application
+        exec: 
+    infra: aws
+    url: ${name}.${target-base}
+    mem: 128M
+    instances: 1
